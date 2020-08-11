@@ -17,12 +17,12 @@ public class Service {
                 e.printStackTrace();
             }
             String threadName = Thread.currentThread().getName();
-            System.out.println(threadName + " do work");
+            System.out.println(threadName + " working");
             endLatch.countDown();
         };
 
         for (int i = 0; i < nThreads; i++) {
-            Thread thread = new Thread(r, i+" thread");
+            Thread thread = new Thread(r, i+" Thread");
             thread.start();
         }
 
