@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f67fee8-0f77-4768-982d-81907fc837ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Eragoo/Concurrency/executor/Executor_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Eragoo/Concurrency/taskCancellation/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -59,7 +59,20 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Executor_">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Eragoo.Concurrency.taskCancellation.App" />
+      <module name="concurrency.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Eragoo.Concurrency.taskCancellation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BarrierService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Eragoo.Concurrency.Barrier.BarrierService" />
       <module name="concurrency.main" />
@@ -99,19 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Service (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Eragoo.Concurrency.Semaphore.Service" />
-      <module name="concurrency.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Eragoo.Concurrency.Semaphore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Service (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Eragoo.Concurrency.Cacher.Service" />
       <module name="concurrency.main" />
@@ -127,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Executor_" />
         <item itemvalue="Application.Service (2)" />
         <item itemvalue="Application.Fibonacci" />
         <item itemvalue="Application.BarrierService" />
-        <item itemvalue="Application.Service (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +151,8 @@
       <workItem from="1597237780783" duration="97000" />
       <workItem from="1597318992622" duration="1720000" />
       <workItem from="1597398676803" duration="4974000" />
+      <workItem from="1598886494256" duration="105000" />
+      <workItem from="1599127981088" duration="1360000" />
     </task>
     <task id="LOCAL-00001" summary="typo fix">
       <created>1597153045421</created>
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597320620639</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ExecutorCompletionService example added">
+      <created>1598869376192</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598869376192</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +200,8 @@
     <MESSAGE value="add .gitignore" />
     <MESSAGE value="semaphore example" />
     <MESSAGE value="multi thread river crossing" />
-    <option name="LAST_COMMIT_MESSAGE" value="multi thread river crossing" />
+    <MESSAGE value="ExecutorCompletionService example added" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExecutorCompletionService example added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="65" key="#Project_Structure" timestamp="1597151844295">
@@ -207,53 +217,59 @@
       <screen x="0" y="0" width="1280" height="746" />
     </state>
     <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597224996096" />
-    <state x="148" y="0" key="CommitChangelistDialog2" timestamp="1597320619956">
+    <state x="403" y="116" key="#xdebugger.evaluate" timestamp="1599129431749">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
+    <state x="403" y="116" key="#xdebugger.evaluate/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129431749" />
+    <state x="142" y="0" key="CommitChangelistDialog2" timestamp="1598869375561">
+      <screen x="0" y="0" width="1280" height="746" />
+    </state>
+    <state x="142" y="0" key="CommitChangelistDialog2/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1598869375561" />
     <state x="148" y="0" key="CommitChangelistDialog2/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597320619956" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1598869336854">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1599129684524">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1598869336854" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404259799" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1598869336851">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1599129684524" />
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463371" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1599129684521">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1598869336851" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404259796" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1598869336850">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1599129684521" />
+    <state width="1238" height="263" key="GridCell.Tab.0.center/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463353" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1599129684520">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1598869336850" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404259795" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1598869336852">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1599129684520" />
+    <state width="1238" height="263" key="GridCell.Tab.0.left/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463343" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1599129684522">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1598869336852" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404259797" />
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1597404775477">
+    <state width="1238" height="212" key="GridCell.Tab.0.right/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1599129684522" />
+    <state width="1238" height="263" key="GridCell.Tab.0.right/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463370" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1599129463378">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.bottom/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1597404775477" />
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404189853" />
-    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1597404775453">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463378" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1599129463375">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.center/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1597404775453" />
-    <state width="1238" height="263" key="GridCell.Tab.1.center/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404189811" />
-    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1597404775448">
+    <state width="1238" height="263" key="GridCell.Tab.1.center/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463375" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1599129463372">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.left/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1597404775448" />
-    <state width="1238" height="263" key="GridCell.Tab.1.left/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404189810" />
-    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1597404775455">
+    <state width="1238" height="263" key="GridCell.Tab.1.left/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463372" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1599129463376">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1597404775455" />
-    <state width="1238" height="263" key="GridCell.Tab.1.right/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597404189842" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597321106192">
+    <state width="1238" height="263" key="GridCell.Tab.1.right/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129463376" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598869381024">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1598869381024" />
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597321106192" />
     <state x="429" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597319087057">
       <screen x="0" y="0" width="1280" height="746" />
