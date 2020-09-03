@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f67fee8-0f77-4768-982d-81907fc837ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Eragoo/Concurrency/taskCancellation/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0f67fee8-0f77-4768-982d-81907fc837ed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +142,7 @@
       <workItem from="1597318992622" duration="1720000" />
       <workItem from="1597398676803" duration="4974000" />
       <workItem from="1598886494256" duration="105000" />
-      <workItem from="1599127981088" duration="1360000" />
+      <workItem from="1599127981088" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="typo fix">
       <created>1597153045421</created>
@@ -189,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598869376192</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Thread cancellation example">
+      <created>1599129731792</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599129731792</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +198,8 @@
     <MESSAGE value="semaphore example" />
     <MESSAGE value="multi thread river crossing" />
     <MESSAGE value="ExecutorCompletionService example added" />
-    <option name="LAST_COMMIT_MESSAGE" value="ExecutorCompletionService example added" />
+    <MESSAGE value="Thread cancellation example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thread cancellation example" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="65" key="#Project_Structure" timestamp="1597151844295">
@@ -221,10 +219,10 @@
       <screen x="0" y="0" width="1280" height="746" />
     </state>
     <state x="403" y="116" key="#xdebugger.evaluate/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1599129431749" />
-    <state x="142" y="0" key="CommitChangelistDialog2" timestamp="1598869375561">
+    <state x="142" y="0" key="CommitChangelistDialog2" timestamp="1599129730991">
       <screen x="0" y="0" width="1280" height="746" />
     </state>
-    <state x="142" y="0" key="CommitChangelistDialog2/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1598869375561" />
+    <state x="142" y="0" key="CommitChangelistDialog2/-1366.32.1366.768/0.0.1280.746@0.0.1280.746" timestamp="1599129730991" />
     <state x="148" y="0" key="CommitChangelistDialog2/-1366.55.1366.745/0.0.1280.746@0.0.1280.746" timestamp="1597320619956" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1599129684524">
       <screen x="0" y="0" width="1280" height="746" />
